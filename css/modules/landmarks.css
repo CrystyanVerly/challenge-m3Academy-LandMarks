@@ -1,0 +1,42 @@
+.landmarks-container {
+  padding: 0 3rem 4.75rem 8.25rem;
+}
+
+.landmarks-container h2 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.16;
+}
+
+.added-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 576px));
+  gap: 1.5rem 1rem;
+}
+
+.containerItem {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 576px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 3px 10px #f1f1f1;
+}
+
+.img-container,
+.description-landmark {
+  max-width: 100%;
+  width: 288px;
+  height: 212px;
+  border-radius: 8px;
+}
+
+.description-landmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+
+.description-landmark p {
+  color: #858585;
+}

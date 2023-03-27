@@ -1,0 +1,135 @@
+@media (max-width: 1365px) {
+  .user-call-container,
+  .landmarks-container {
+    padding: 3rem;
+  }
+  .landmarks-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .added-items-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 864px));
+    justify-content: center;
+  }
+  .containerItem {
+    flex-wrap: unset;
+    max-width: 100%;
+  }
+  .description-landmark {
+    justify-content: space-evenly;
+  }
+  .img-container,
+  .description-landmark {
+    width: 100%;
+    height: 100%;
+  }
+  .img-container img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .added-items-container {
+    justify-content: center;
+  }
+  .user-call-container,
+  .landmarks-container {
+    padding: 1rem 1rem 2rem;
+  }
+  .user-input-container {
+    grid-template-columns: minmax(100px, 1fr);
+    grid-template-areas:
+      "title"
+      "img"
+      "in-title"
+      "desc"
+      "btn";
+    gap: 17px;
+  }
+  .containerItem {
+    flex-wrap: wrap;
+  }
+  .user-input-container h1 {
+    margin-bottom: 1px;
+  }
+  .input-img,
+  .input-title,
+  .input-description {
+    width: 100%;
+  }
+  .btn-add {
+    justify-self: stretch;
+  }
+  .img-container,
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+  .description-landmark {
+    height: 212px;
+    padding: 1.5rem 3rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .user-input-container {
+    gap: 8px;
+  }
+  .user-input-container h1 {
+    margin-bottom: 1rem;
+  }
+  .input-title,
+  .input-description {
+    margin-top: 8px;
+  }
+  .user-call-container,
+  .landmarks-container {
+    padding: 1rem;
+  }
+  .input-img {
+    width: 288px;
+    max-width: 100%;
+  }
+  .containerItem {
+    width: 343px;
+  }
+  .containerItem:nth-child(1) {
+    order: 1;
+  }
+  .containerItem:nth-child(2) {
+    order: 3;
+  }
+  .containerItem:nth-child(3) {
+    order: 2;
+  }
+  .containerItem:nth-child(4) {
+    order: 4;
+  }
+  .containerItem:last-child .description-landmark {
+    justify-content: space-evenly;
+  }
+  .img-container,
+  .img-container img {
+    width: 100%;
+    height: 212px;
+  }
+  .landmarks-container {
+    padding: 3.25rem 1rem 2rem;
+  }
+  .landmarks-container h1 {
+    margin-left: 10px;
+  }
+  .description-landmark {
+    margin: 0 auto;
+    padding: 1.5rem;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 330px) {
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/script.js" defer></script>
+    <title>Pontos Turísticos</title>
+  </head>
+
+  <body>
+    <section class="user-call-container">
+      <div class="user-input-container">
+        <h1>Adicionar um Ponto Turístico</h1>
+        <div class="in-file">
+          <label
+            class="input-label"
+            for="user-image"
+            data-input="label"
+          ></label>
+          <input
+            type="file"
+            data-input="file"
+            name="user-image"
+            id="user-image"
+            accept=".png, .jpg, .jpeg"
+            placeholder="Image"
+            required
+          />
+        </div>
+        <input
+          minlength="3"
+          maxlength="30"
+          data-input="title"
+          class="input-title"
+          type="text"
+          placeholder=" Título"
+          required
+        />
+        <textarea
+          minlength="8"
+          maxlength="125"
+          data-input="desc"
+          name="description"
+          class="input-description"
+          cols="30"
+          rows="5"
+          placeholder="Descrição"
+          required
+        ></textarea>
+        <button data-input="btnAdd" type="submit" class="btn-add">
+          Adicionar
+        </button>
+      </div>
+    </section>
+    <section class="landmarks-container">
+      <h1>Pontos Turísticos</h1>
+      <div class="added-items-container">
+        <div class="containerItem">
+          <div class="img-container">
+            <img
+              src="./img/pao-de-acucar.jpg"
+              alt="Paisagem ponto turístico carioca Pão de açucar"
+            />
+          </div>
+          <div class="description-landmark">
+            <h2>Pão de Açúcar</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa
+              amet sint. Velit officia consece duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+        <div class="containerItem">
+          <div class="img-container">
+            <img
+              src="./img/ilha-grande.jpg"
+              alt="Paisagem ponto turístico carioca Ilha Grande"
+            />
+          </div>
+          <div class="description-landmark">
+            <h2>Ilha Grande</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa
+              amet sint. Velit officia consece duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+        <div class="containerItem">
+          <div class="img-container">
+            <img
+              src="./img/cristo-redentor.jpg"
+              alt="Paisagem ponto turístico carioca Cristo redentor"
+            />
+          </div>
+          <div class="description-landmark">
+            <h2>Cristo Redentor</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa
+              amet sint. Velit officia consece duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+        <div class="containerItem">
+          <div class="img-container">
+            <img
+              src="./img/centro-paraty.jpg"
+              alt="Paisagem ponto turístico carioca centro histórico de Paraty"
+            />
+          </div>
+          <div class="description-landmark">
+            <h2>Centro Histórico de Paraty</h2>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor dosa
+              amet sint. Velit officia consece duis enim velit mollit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
