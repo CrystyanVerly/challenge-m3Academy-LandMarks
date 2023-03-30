@@ -17,10 +17,11 @@
 
   <body>
     <section class="user-call-container">
-      <div class="user-input-container">
+      <form class="user-input-container">
         <h1>Adicionar um Ponto Turístico</h1>
         <div class="in-file">
           <label
+            name="input-label"
             class="input-label"
             for="user-image"
             data-input="label"
@@ -35,30 +36,43 @@
             required
           />
         </div>
-        <input
-          minlength="3"
-          maxlength="30"
-          data-input="title"
-          class="input-title"
-          type="text"
-          placeholder=" Título"
-          required
-        />
-        <textarea
-          minlength="8"
-          maxlength="125"
-          data-input="desc"
-          name="description"
-          class="input-description"
-          cols="30"
-          rows="5"
-          placeholder="Descrição"
-          required
-        ></textarea>
+
+        <div class="wrapp-input" id="wrapp-input-title">
+          <label class="count-caracter for-title" for="input-title"></label>
+          <input
+            minlength="3"
+            maxlength="30"
+            data-input="title"
+            class="input-title"
+            name="input-title"
+            type="text"
+            placeholder=" Título"
+            required
+          />
+        </div>
+
+        <div class="wrapp-input">
+          <label
+            class="count-caracter for-description"
+            for="description"
+          ></label>
+          <textarea
+            minlength="8"
+            maxlength="125"
+            data-input="desc"
+            name="description"
+            class="input-description"
+            cols="30"
+            rows="5"
+            placeholder="Descrição"
+            required
+          ></textarea>
+        </div>
+
         <button data-input="btnAdd" type="submit" class="btn-add">
           Adicionar
         </button>
-      </div>
+      </form>
     </section>
     <section class="landmarks-container">
       <h1>Pontos Turísticos</h1>
