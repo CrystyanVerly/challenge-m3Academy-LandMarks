@@ -31,16 +31,18 @@ export default function $addElementToList() {
   _btnAddInput.addEventListener("click", function (e) {
     e.preventDefault();
     const _IMG = document.querySelector(".img--inputed");
+    const _lenTitle = _titleInput.value.length;
+    const _lenDesc = _descriptionInput.value.length;
 
-    if (!_IMG) {
+    if (!_IMG && _lenTitle < 3 && _lenDesc < 8) {
       _labelInputFile.classList.add("invalid");
+      _titleInput.classList.add("invalid");
+      _descriptionInput.classList.add("invalid");
+    } else {
+      
     }
 
-    if (
-      _titleInput.value.length >= 3 &&
-      _descriptionInput.value.length >= 8 &&
-      _IMG
-    ) {
+    if (_lenTitle >= 3 && _lenDesc >= 8 && _IMG) {
       $divCreate();
       $resetInput();
     }
