@@ -146,6 +146,6 @@ input[type="file"] {
 }
 
 .btn-add:hover {
-  color: #ff5a5f;
-  background: #fff;
+  color: #fcfcfc;
+  background: #e24348;
 }
